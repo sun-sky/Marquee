@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.sunsky.marqueeview.MarqueeView
+        android:id="@+id/upview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:padding="10dp"
+        app:animDuration="1000"
+        app:interval="5000"
+        app:isSetAlphaAnim="true" />
+
+    <com.sunsky.marqueeview.MarqueeView
+        android:id="@+id/upview2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:padding="10dp"
+        app:animDuration="1000"
+        app:interval="5000"
+        app:isSetAlphaAnim="true" />
+
+</LinearLayout>
