@@ -22,5 +22,6 @@ android {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:appcompat-v7:24.2.1'
-    compile project(':MarqueeView')
+//    compile project(':MarqueeView')
+    compile 'com.github.sun-sky:Marquee:1.0.0'
 }

@@ -1,7 +1,7 @@
 # Marquee-master
-仿淘宝首页的淘宝头条垂直滚动
-滚动布局继承了是ViewFlipper,可以实现进入动画，退出动画。切换时间间隔。
-MarqueeView可用于多行或单行滚动，滚动的布局可以自定义。
+仿淘宝首页的淘宝头条垂直滚动<br>
+滚动布局继承了是ViewFlipper,可以实现进入动画，退出动画，设置切换时间间隔。<br>
+MarqueeView可用于多行或单行滚动，滚动的布局可以自定义。<br>
 
 ### 效果图  
 <img src="/screenshots/marqueeview.gif" style="width: 30%;">
@@ -119,4 +119,7 @@ MarqueeView可用于多行或单行滚动，滚动的布局可以自定义。
 
 * [https://github.com/dreamlivemeng/UpMarqueeTextView-master](https://github.com/dreamlivemeng/UpMarqueeTextView-master)
 
+# 关于我
+#### Sunsky
+#### [我的简书](http://www.jianshu.com/u/562d62d52334)
 #### ⊙开源不易，希望给个star或者fork奖励
