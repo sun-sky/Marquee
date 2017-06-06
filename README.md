@@ -112,7 +112,7 @@ MarqueeView可用于多行或单行滚动，滚动的布局可以自定义。
 
 ```
 
-####4、重影问题可参考以下解决方案<br>
+#### 4、重影问题可参考以下解决方案<br>
 ```java
   @Override
     public void onResume() {
