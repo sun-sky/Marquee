@@ -1,7 +1,7 @@
 # Marquee-master
-仿淘宝首页的淘宝头条垂直滚动<br>
-滚动布局继承了是ViewFlipper,可以实现进入动画，退出动画，设置切换时间间隔。<br>
-MarqueeView可用于多行或单行滚动，滚动的布局可以自定义。<br>
+仿淘宝首页的淘宝头条垂直滚动
+滚动布局继承了是ViewFlipper,可以实现进入动画，退出动画，设置切换时间间隔。
+MarqueeView可用于多行或单行滚动，滚动的布局可以自定义。
 
 ### 效果图  
 <img src="/screenshots/marqueeview.gif" style="width: 30%;">
@@ -32,7 +32,7 @@ MarqueeView可用于多行或单行滚动，滚动的布局可以自定义。<br
 
 **xml文件**
 
-```
+```xml
  <com.sunsky.marqueeview.MarqueeView
         android:id="@+id/upview1"
         android:layout_width="match_parent"
@@ -112,6 +112,20 @@ MarqueeView可用于多行或单行滚动，滚动的布局可以自定义。<br
 
 ```
 
+####4、重影问题可参考以下解决方案<br>
+```java
+  @Override
+    public void onResume() {
+        super.onResume();
+        mallHomeMarquee.startFlipping();
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        mallHomeMarquee.stopFlipping();
+    }
+```
 
 
 # Thanks

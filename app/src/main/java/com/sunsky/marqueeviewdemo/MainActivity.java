@@ -41,6 +41,21 @@ public class MainActivity extends AppCompatActivity {
         initView();
     }
 
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        marqueeView1.startFlipping();
+        marqueeView2.startFlipping();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        marqueeView1.stopFlipping();
+        marqueeView2.stopFlipping();
+    }
+
     /**
      * 实例化控件
      */
