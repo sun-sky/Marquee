@@ -8,7 +8,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.dreamlive.upmarqueeviewdemo.R;
 import com.sunsky.marqueeview.MarqueeView;
 
 import java.util.ArrayList;
@@ -90,6 +89,7 @@ public class MainActivity extends AppCompatActivity {
      * 条数为奇数时做了些处理：奇数时最后一个没有内容 将第一个拼接到最后显示
      */
     private void setViewTwoLines() {
+        views1.clear();//记得加这句话，不然可能会产生重影现象
         for (int i = 0; i < data.size(); i = i + 2) {
             final int position = i;
             //设置滚动的单个布局
@@ -122,10 +122,10 @@ public class MainActivity extends AppCompatActivity {
             });
             //进行对控件赋值
             tv1.setText(data.get(i).toString());
-            if (data.size() > i + 1) {
-                //因为淘宝那儿是两条数据，但是当数据是奇数时就不需要赋值第二个，所以加了一个判断，还应该把第二个布局给隐藏掉
+            if (data.size() > i + 1) {//奇数条
                 tv2.setText(data.get(i + 1).toString());
-            } else {
+            } else {//偶数条
+                //因为淘宝那儿是两条数据，但是当数据是奇数时就不需要赋值第二个，所以加了一个判断，还应该把第二个布局给隐藏掉
                 //moreView.findViewById(R.id.rl2).setVisibility(View.GONE);
                 //修改了最后一个没有 将第一个拼接到最后显示
                 tv2.setText(data.get(0).toString());
@@ -141,6 +141,7 @@ public class MainActivity extends AppCompatActivity {
      * 自定义布局——单行滚动
      */
     private void setViewSingleLine() {
+        views2.clear();//记得加这句话，不然可能会产生重影现象
         for (int i = 0; i < data.size(); i++) {
             final int position = i;
             //设置滚动的单个布局
@@ -178,4 +179,5 @@ public class MainActivity extends AppCompatActivity {
 //        data.add("阿里HotFix2.0升级详解 畅谈热修复领域那些事");
 
     }
+
 }

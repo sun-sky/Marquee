@@ -85,6 +85,7 @@ MarqueeView可用于多行或单行滚动，滚动的布局可以自定义。
      * 自定义布局——单行滚动
      */
     private void setViewSingleLine() {
+     views2.clear();//记得加这句话，不然可能会产生重影现象
         for (int i = 0; i < data.size(); i++) {
             final int position = i;
             //设置滚动的单个布局
@@ -117,13 +118,13 @@ MarqueeView可用于多行或单行滚动，滚动的布局可以自定义。
   @Override
     public void onResume() {
         super.onResume();
-        mallHomeMarquee.startFlipping();
+        marqueeView1.startFlipping();
     }
 
     @Override
     public void onPause() {
         super.onPause();
-        mallHomeMarquee.stopFlipping();
+        marqueeView1.stopFlipping();
     }
 ```
 
@@ -134,6 +135,6 @@ MarqueeView可用于多行或单行滚动，滚动的布局可以自定义。
 * [https://github.com/dreamlivemeng/UpMarqueeTextView-master](https://github.com/dreamlivemeng/UpMarqueeTextView-master)
 
 # 关于我
-#### Sunsky
+#### [我的Github](https://github.com/sun-sky)
 #### [我的简书](http://www.jianshu.com/u/562d62d52334)
 #### ⊙开源不易，希望给个star或者fork奖励
